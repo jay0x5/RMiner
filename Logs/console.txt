@@ -1,0 +1,279 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240115141128
+Username: DESKTOP-5F4B363\Jay
+RunAs User: DESKTOP-5F4B363\Jay
+Configuration Name: 
+Machine: DESKTOP-5F4B363 (Microsoft Windows NT 10.0.22631.0)
+Host Application: powershell -version 5.0 -executionpolicy bypass -windowstyle maximized -command & {.\rainbowminer.ps1 -configfile .\Config\config.txt; exit $lastexitcode}
+Process ID: 24420
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+__________        .__      ___.                   _____  .__
+\______   \_____  |__| ____\_ |__   ______  _  __/     \ |__| ____   ___________
+ |       _/\__  \ |  |/    \| __ \ /  _ \ \/ \/ /  \ /  \|  |/    \_/ __ \_  __ \
+ |    |   \ / __ \|  |   |  \ \_\ (  <_> )     /    Y    \  |   |  \  ___/|  | \/
+ |____|_  /(____  /__|___|  /___  /\____/ \/\_/\____|__  /__|___|  /\___  >__|
+        \/      \/        \/    \/                     \/        \/     \/
+
+Starting v4.9.1.3! Please wait..
+
+RainbowMiner recommends PowerShell Core Version 7.2.17 (vs. v5.1.22621)
+Everything will run fine with the current version, but consider updating your PowerShell
+
+Link for PowerShell: https://github.com/PowerShell/PowerShell/releases/tag/v7.2.17
+
+Unblocking files ..
+ok
+Checking for VM ..
+ok (not in a VM)
+Checking for cURL ..
+ok
+Detecting devices ..
+1 CPU, 1 Nvidia, 1 AMD found
+Starting sysinfo ..
+ok
+Checking Windows pagefile/virtual memory ..
+Problem!
+WARNING: Pagefile on D: is set to system managed
+
+To adjust your pagefile settings:
+1. goto Computer Properties -> Advanced System Settings -> Performance -> Advanced -> Virtual Memory
+2. uncheck "Automatically manage paging file size for all drives"
+3. select "Custom size"
+4. enter 24200 into the fields "Initial Size (MB)" and "Maximum Size (MB)"
+5. click onto "Set" and then "OK"
+
+Initialize configuration ..
+Checking last shutdown ..
+ok
+Read configuration ..
+
+*** RainbowMiner Configuration ***
+
+
+Hints (read them all! It will make entering data much easier):
+
+- press Return to accept the defaults
+- fields marked with * are mandatory
+- use comma "," to separate list entries
+- add new entries to a list, by adding a "+" in front of your input
+- remove entries from a list, by adding a "-" in front of your input
+- enter "list" or "help" to show a list of all valid entries
+- enter "back" or "<" to repeat the last input
+- enter "delete" to clear a non-mandatory entry
+- enter "save" or "done" to end config and save changes
+- enter "exit" or "cancel" to abort without any changes to the configuration
+
+
+(1) Basic Setup
+
+
+Every pool (except the MiningPoolHub) wants the miner to send a worker's name. You can change the name later. Please enter only letters and numbers.
+
+
+Let's start with the local setup of this machine's API.
+
+RainbowMiner can be monitored using your webbrowser via API:
+- on this machine: http://localhost:4000
+- on most devices in the network: http://DESKTOP-5F4B363:4000
+- on any other device in the network: http://192.168.31.211:4000
+- it is strongly recommended, that you enable auth and/or restrict access to specific IP-addresses in the following
+
+
+Do you want to mine to autoexchange pools and earn BTC?
+It is easy: Lookup your BTC wallet address and copy it to your clipboard, then press the right mouse key in this window to paste
+If you do not want to use autoexchange pools, leave this empty (or enter "clear" to make it empty) and press return
+
+
+If you plan to mine on Nicehash, you need to register an account with them, to get a NiceHash mining wallet address (please read the Pools section of our readme!).
+If you do not want to use Nicehash as a pool, leave this empty (or enter "clear" to make it empty) and press return
+
+
+You will mine on Nicehash. If you want to see your balance in RainbowMiner, you can now enter your API Key and the API Secret. Create a new key-pair on "My Settings->API key" page, "Wallet permission" needs to be set.
+
+
+Now is your chance to add other currency wallets (e.g. enter XMR for Monero, ETH for Ethash ...)
+
+
+Now is your chance to add other currency wallets (e.g. enter XMR for Monero, ETH for Ethash ...)
+
+
+If you plan to use MiningPoolHub for mining, you will have to register an account with them and choose a username. Enter this username now, or leave empty to disable MiningPoolHub (can be activated, later)
+
+
+You will mine on MiningPoolHub as Jay0x5. If you want to see your balance in RainbowMiner, you can now enter your USER ID (a number) and the API KEY. You find these two values on MiningPoolHub's "Edit account" page.
+
+
+If you plan to offer your rig for rent at MiningRigRentals, you will have to register an account with them and choose a username. Enter this username now, or leave empty to disable MiningRigRentals (can be activated, later)
+
+
+To offer your rig at MRR, you will need an API Key and Secret (each rig should have it's own). Create each pair on MiningRigRentals's "</> API Keys" page.
+
+
+Choose the region, that is nearest to your rigs (remember: you can always simply accept the default by pressing return):
+
+Region         Valid shortcuts/entries
+------         -----------------------
+Asia           as, asia, cn
+Australia      au
+Canada         ca
+CentralEurope  ceu, eu, eucentral, europe, euwest
+EasternEurope  eueast
+France         fr
+Germany        de, eude, germany
+HongKong       hk, sz
+India          in
+Japan          jp
+Korea          kr
+MiddleEast     du, kazakhstan, me, uae
+NorthernEurope eunorth, fi, neu, se
+Russia         moscow, ru
+SouthAfrica    southafrica, za
+SouthAmerica   arg, br, latam, sa
+SoutheastAsia  ap, aspac, sea, sg, singapore
+Taiwan         tw
+Texas          texas, tx, ustx
+UK             uk
+US             america, na, us
+USCentral      usacentral, uscentral
+USEast         usaeast, useast
+USNorthWest    usanw, usnw
+USSouth        usasouth, ussouth
+USWest         naw, usawest, usw, uswest
+WesternAsia    aswest, tr, wa
+
+
+
+
+RainbowMiner includes a lot of different miner programs. Before the regular profit switching operation may start,
+all programs need to be benchmarked on your system, once. The benchmarks will already mine into your wallet,
+but it may take a long time to finish. Please be patient. It is a one time thing.
+Note: if you don't care about accuracy and just want to get going, you may switch to a fastlane in the next step.
+
+Please select the benchmark-accuracy. This value will determine the runtime interval used for benchmarks
+(this value can be set to individual values by directly changing BenchmarkInterval in config.txt).
+- Quick   = 60 seconds (should be enough, for most cases)
+- Normal  = 90 seconds
+- Precise = 180 seconds
+
+RainbowMiner can track this and all of your rig's status at https://rbminer.net (or another compatible service)
+If you enable this feature, you may enter an existing miner status key or create a new one.
+It is possible to enter an email address or a https://pushover.net user key to be notified in case your rig is offline.
+
+A new miner status key has been created:
+897cd1e3-842f-4f7a-97fd-f13bd483f712
+Copy and save or write this down, to access your stats at https://rbminer.net
+Do not forget to save your changes, or the key will not be stored into your config.
+
+
+(2) Select your pools, miners and algorithm (be sure you read the notes in the README.md)
+
+
+Choose your mining pools from this list or accept the default for a head start (read the Pools section of our readme for more details):
+2Miners, 2MinersAE, 2MinersSolo, AccPool, Acepool, Aionpool, AlphPool, BaikalMine, BaikalMinePPS, BaikalMineSolo, Binance, C3pool, CpuPool, Crazypool, DeepMinerZ, DeepMinerZSolo, Ekapool, EthashPool, Ethwmine, Ezil, F2pool, FlockPool, FluxPools, FlyPool, Grinmint, Gteh, Hashcryptos, Hashpool, HashVault, Hellominer, HeroMiners, Hiveon, Icemining, Kryptex, LeafPool, LuckPool, LuckyPool, Luxor, Minerpool, MinerpoolSolo, MinerRocks, Mining4people, Mining4peopleSolo, MiningDutch, MiningDutchCoins, MiningPoolHub, MiningPoolHubCoins, MiningRigRentals, Mintpond, Molepool, MoneroOcean, Nanopool, Neuropool, NiceHash, Pmpmining, PmpminingSolo, Poolin, ProHashing, ProHashingCoins, ProHashingCoinsSolo, RaptoreumZone, Ravenminer, RPlant, RPlantSolo, SeroPool, SoloPool, Sunpool, SupportXmr, SuprNova, unMineable, UUpool, ViaBTC, Vipor, ViporSolo, WoolyPooly, WoolyPoolySolo, ZergPool, ZergPoolCoins, ZergPoolCoinsParty, ZergPoolCoinsSolo, ZergPoolParty, ZergPoolSolo, Zpool, ZpoolCoins
+
+You have entered wallets for the following currencies. Consider adding some of the proposed pools:
+
+Currency pools without autoexchange
+-------- --------------------------
+DOGE     Pmpmining,PmpminingSolo,unMineable,ZergPoolCoins,ZergPoolCoinsParty,ZergPoolCoinsSolo,ZpoolCoins
+
+
+Hint: "+entryname" = add an entry to a list, "-entryname" = remove an entry from a list
+
+
+You are almost done :) Our defaults for miners and algorithms give you a good start. If you want, you can skip the settings for now
+
+
+(3) Select the devices to mine on and miningmode
+
+
+Since you plan to mine on AMD, the minimum delay between miner change will be set to 2 seconds
+
+
+
+Well done! You made it through the setup wizard - an initial configuration has been created
+If you want to start mining, please select to exit the configuration at the following prompt. After this, in the next few minutes, RainbowMiner will download all miner programs. Please be patient and let it run. There will be some popup windows, from time to time. If you happen to click into one of those black popup windows, they will hang: press return in this window to resume operation
+
+
+*** RainbowMiner Configuration ***
+
+Please choose, what to configure:
+
+- Wallet: setup wallet addresses, worker and username, API-keys
+- Common: setup the most common RainbowMiner settings and flags
+- Energycosts: setup energy consumption values
+- Selection: select which pools, miners, algorithms to use
+- All: step through the full setup, configuring all
+- Miners: finetune miners, add command-line arguments, penalty values and more (only for the technical savvy user)
+- Pools: finetune pools, add different coin wallets, penalty values and more
+- Devices: finetune devices, select algorithms, coins and more
+- Algorithms: finetune global settings for algorithms, penalty, minimum hashrate and more
+- Coins: finetune global settings for dedicated coins, wallets, penalty, minimum hashrate and more
+- OC-Profiles: create or edit overclocking profiles
+- MRR: list and delete rigs at MiningRigRentals
+- Network: API and client/server setup for multiple rigs within one network
+- Scheduler: different power prices and selective pause for timespans
+
+
+Exiting configuration setup - all miners will be restarted. Please be patient!
+
+PS>TerminatingError(New-Object): "Exception calling ".ctor" with "0" argument(s): "Could not connect to MSI Afterburner 2.1 or later.""
+PS>TerminatingError(New-Object): "Exception calling ".ctor" with "0" argument(s): "Could not connect to MSI Afterburner 2.1 or later.""
+Loading pool modules ..
+.. loading MiningPoolHub
+done (1.925s)
+.. loading MiningPoolHubCoins
+done (1.315s)
+.. loading MiningRigRentals
+done (0.612s)
+.. loading NiceHash
+done (3.059s)
+.. loading ZergPool
+done (10.017s)
+.. loading Zpool
+done (8.569s)
+Loading balance modules ..
+Selecting best pools ..
+.. loading WhatToMine
+PS>TerminatingError(ConvertFrom-Json): "Cannot convert the JSON string because a dictionary that was converted from the string contains the duplicated keys 'BitNet' and 'Bitnet'."
+done (6.684s)
+Loading miner modules ..
+Selecting best miners ..
+Starting downloader (48 miners) ..
+Starting mining operation ..
+INFO: WARNING: RainbowMiner API is down!
+
+WARNING: No miners available: Downloading miners, please be patient
+
+Miners have been restarted!
+
+
+WARNING: Download in progress: 48 miners left. Command windows might popup during extraction.
+WARNING: Download in progress: 1 mining pre-requisite left.
+Pool Balances as of 01/15/2024 14:22:40 (next update in 29 minutes):
+
+Name            Sym  Balance    Pending        BTC  USD
+----            ---  -------    -------        ---  ---
+[93m*Total Pools*[0m                   -                 [93m[0m     [93m[0m
+Wallet bc1..rzd BTC  0.00003764 -       0.00003764 1.61
+Wallet DKq..PCM DOGE 0.28876960 -       0.00000055 0.02
+[93m*Total Wallets*[0m                 -       [93m0.00003819[0m [93m1.63[0m
+[93m*Total*[0m                         -       [93m0.00003819[0m [93m1.63[0m
+
+
+ [01/15/2024 14:23:49] Profit = 0.00000000 BTC/Day | 0.000 USD/Day | 1 BTC = USD 42648.2
+
+Waiting 20s until next run: E[x]it, [R]estart, [B]alance update, [S]kip SP, [W]D reset, [C]onfiguration, [V]erbose, [P]ause, [L]ock
+**********************
+Windows PowerShell transcript end
+End time: 20240115142350
+**********************

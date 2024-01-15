@@ -1,0 +1,49 @@
+{
+    "DOGE":  {
+                 "Penalty":  "0",
+                 "MinHashrate":  "0",
+                 "MinWorkers":  "0",
+                 "MaxTimeToFind":  "0",
+                 "PostBlockMining":  "0",
+                 "MinProfitPercent":  "0",
+                 "Wallet":  "DKqegP8nrWgbsSLmnaMpZ1c4U7o7YbiPCM",
+                 "Comment":  "",
+                 "EnableAutoPool":  "1"
+             },
+    "RVN":  {
+                "Penalty":  "0",
+                "MinHashrate":  "0",
+                "MinHashrateSolo":  "0",
+                "MinWorkers":  "0",
+                "MaxTimeToFind":  "0",
+                "Wallet":  "",
+                "EnableAutoPool":  "0",
+                "PostBlockMining":  "0",
+                "MinProfitPercent":  "0",
+                "Comment":  ""
+            },
+    "XMR":  {
+                "Penalty":  "0",
+                "MinHashrate":  "0",
+                "MinHashrateSolo":  "0",
+                "MinWorkers":  "0",
+                "MaxTimeToFind":  "0",
+                "Wallet":  "",
+                "EnableAutoPool":  "0",
+                "PostBlockMining":  "0",
+                "MinProfitPercent":  "0",
+                "Comment":  ""
+            },
+    "XWP":  {
+                "Penalty":  "0",
+                "MinHashrate":  "0",
+                "MinHashrateSolo":  "0",
+                "MinWorkers":  "0",
+                "MaxTimeToFind":  "0",
+                "Wallet":  "",
+                "EnableAutoPool":  "0",
+                "PostBlockMining":  "0",
+                "MinProfitPercent":  "0",
+                "Comment":  ""
+            }
+}

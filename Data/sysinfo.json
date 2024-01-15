@@ -1,0 +1,61 @@
+{
+    "CpuLoad":  61.08,
+    "Cpus":  [
+                 {
+                     "Clock":  3668.3,
+                     "Utilization":  61.08,
+                     "PowerDraw":  16.62,
+                     "Temperature":  64.81,
+                     "Method":  "lhm"
+                 }
+             ],
+    "Memory":  {
+                   "TotalGB":  21.9,
+                   "UsedGB":  14.1,
+                   "UsedPercent":  64.53
+               },
+    "Disks":  [
+                  {
+                      "Drive":  "C:",
+                      "Name":  "",
+                      "TotalGB":  232.1,
+                      "UsedGB":  203.2,
+                      "UsedPercent":  87.52
+                  },
+                  {
+                      "Drive":  "D:",
+                      "Name":  "backup(programming)",
+                      "TotalGB":  202.5,
+                      "UsedGB":  164.4,
+                      "UsedPercent":  81.18
+                  },
+                  {
+                      "Drive":  "E:",
+                      "Name":  "New Volume",
+                      "TotalGB":  310.5,
+                      "UsedGB":  277.1,
+                      "UsedPercent":  89.24
+                  },
+                  {
+                      "Drive":  "F:",
+                      "Name":  "home",
+                      "TotalGB":  126.2,
+                      "UsedGB":  95.5,
+                      "UsedPercent":  75.64
+                  },
+                  {
+                      "Drive":  "G:",
+                      "Name":  "old windows",
+                      "TotalGB":  170,
+                      "UsedGB":  149.5,
+                      "UsedPercent":  87.97
+                  },
+                  {
+                      "Drive":  "H:",
+                      "Name":  "",
+                      "TotalGB":  59.5,
+                      "UsedGB":  0.2,
+                      "UsedPercent":  0.26
+                  }
+              ]
+}

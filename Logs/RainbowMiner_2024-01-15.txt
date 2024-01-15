@@ -1,0 +1,48 @@
+﻿[2024-01-15 14:11:27] INFO: Starting RainbowMiner v4.9.1.3
+[2024-01-15 14:11:28] INFO: Link for PowerShell: https://github.com/PowerShell/PowerShell/releases/tag/v7.2.17
+[2024-01-15 14:11:28] INFO: Run as administrator
+[2024-01-15 14:11:28] INFO: Curl : .\Includes\curl\x64\curl.exe
+[2024-01-15 14:11:33] INFO: c:\pagefile.sys is set to initial size 24200 MB and maximum size 24200 MB
+[2024-01-15 14:11:33] INFO: d:\pagefile.sys is set to initial size 0 MB and maximum size 0 MB
+[2024-01-15 14:11:33] WARNING: Pagefile on D: is set to system managed
+[2024-01-15 14:20:07] INFO: Miner Status key created: 897cd1e3-842f-4f7a-97fd-f13bd483f712
+[2024-01-15 14:22:27] INFO: Proxy settings have changed: Restarting HttpClient
+[2024-01-15 14:22:27] INFO: cURL disabled
+[2024-01-15 14:22:29] INFO: Internet is ok
+[2024-01-15 14:22:29] INFO: Failed to create MSI Afterburner Monitor object. Falling back to standard monitoring.
+[2024-01-15 14:22:29] INFO: Failed to create MSI Afterburner Control object. Overclocking non-NVIDIA devices will not be available.
+[2024-01-15 14:22:30] INFO: Started 2 API threads on port 4000
+[2024-01-15 14:22:37] INFO: Next donation run will start in 01 hour(s) 30 minute(s). 
+[2024-01-15 14:22:41] INFO: Updating exchange rates. 
+[2024-01-15 14:22:42] INFO: Loading saved statistics. 
+[2024-01-15 14:22:42] INFO: Loading pool information. 
+[2024-01-15 14:22:44] INFO: MiningPoolHub loaded in 1.925s 
+[2024-01-15 14:22:46] INFO: MiningPoolHubCoins loaded in 1.315s 
+[2024-01-15 14:22:46] INFO: MiningRigRentals loaded in 0.612s 
+[2024-01-15 14:22:49] INFO: NiceHash loaded in 3.059s 
+[2024-01-15 14:22:59] INFO: ZergPool loaded in 10.017s 
+[2024-01-15 14:23:08] INFO: Zpool loaded in 8.569s 
+[2024-01-15 14:23:08] INFO: Getting pool balances. 
+[2024-01-15 14:23:09] VERBOSE: Cannot get balance on pool (MiningPoolHub) - no API key specified. 
+[2024-01-15 14:23:12] INFO: Pool Balance API (ZergPool) for BTC returned nothing. 
+[2024-01-15 14:23:14] INFO: Pool Balance API (Zpool) for BTC returned nothing. 
+[2024-01-15 14:23:23] INFO: WhatToMine loaded in 6.684s 
+[2024-01-15 14:23:24] INFO: Calculating pool compare prices. 
+[2024-01-15 14:23:24] INFO: Selecting best pool for each algorithm. 
+[2024-01-15 14:23:25] INFO: Getting miner information. 
+[2024-01-15 14:23:42] INFO: Start add missing combos
+[2024-01-15 14:23:43] INFO: End add missing combos
+[2024-01-15 14:23:43] INFO: Calculating profit for each miner. 
+[2024-01-15 14:23:45] INFO: Starting download of 48 miners.
+[2024-01-15 14:23:46] WARNING: RainbowMiner API is down!
+[2024-01-15 14:23:49] WARNING: No miners available: Downloading miners, please be patient
+[2024-01-15 14:23:49] WARNING: Download in progress: 48 miners left. Command windows might popup during extraction.
+[2024-01-15 14:23:49] WARNING: Download in progress: 1 mining pre-requisite left.
+[2024-01-15 14:23:50] INFO: Runtime interval changed from 60 to 89 seconds. 
+[2024-01-15 14:23:50] INFO: Start waiting 20 seconds before next run. 
+[2024-01-15 14:23:50] INFO: Pinging monitoring server (including totals, minerdata, poolsdata, devicedata). 
+[2024-01-15 14:23:50] INFO: Go report, go! https://rbminer.net/api/report.php
+[2024-01-15 14:23:51] INFO: Done report, done.
+[2024-01-15 14:23:52] INFO: User requests to stop script. 
+[2024-01-15 14:23:52] INFO: Saving hash rates. 
+[2024-01-15 14:23:52] INFO: Gracefully halting RainbowMiner

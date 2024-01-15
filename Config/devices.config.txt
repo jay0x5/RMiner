@@ -1,0 +1,35 @@
+{
+    "CPU":  {
+                "Algorithm":  "",
+                "ExcludeAlgorithm":  "",
+                "MinerName":  "",
+                "ExcludeMinerName":  "",
+                "DisableDualMining":  "",
+                "DefaultOCprofile":  "",
+                "PowerAdjust":  "100",
+                "Worker":  "",
+                "EnableLHR":  ""
+            },
+    "GTX1650":  {
+                    "DefaultOCprofile":  "Profile2",
+                    "Algorithm":  "",
+                    "ExcludeAlgorithm":  "",
+                    "MinerName":  "",
+                    "ExcludeMinerName":  "",
+                    "DisableDualMining":  "",
+                    "PowerAdjust":  "100",
+                    "Worker":  "",
+                    "EnableLHR":  ""
+                },
+    "Vega8":  {
+                  "DefaultOCprofile":  "Profile2",
+                  "Algorithm":  "",
+                  "ExcludeAlgorithm":  "",
+                  "MinerName":  "",
+                  "ExcludeMinerName":  "",
+                  "DisableDualMining":  "",
+                  "PowerAdjust":  "100",
+                  "Worker":  "",
+                  "EnableLHR":  ""
+              }
+}
